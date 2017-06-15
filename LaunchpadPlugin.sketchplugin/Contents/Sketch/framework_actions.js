@@ -108,3 +108,13 @@ function detachSymbolPreservingOverridesRecursive(context) {
     loadBundleIfRequired();
     [APSketch detachSymbolPreservingOverridesRecursive];
 }
+
+function editFontsFallbacks(context) {
+    loadBundleIfRequired();
+    [APSketch editFontsFallbacks];
+}
+
+function editMataTags(context) {
+    loadBundleIfRequired();
+    [APSketch editMataTags];
+}

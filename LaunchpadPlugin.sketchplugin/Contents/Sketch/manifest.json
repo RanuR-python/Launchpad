@@ -103,6 +103,20 @@
                   },
                   {
                   "script" : "framework_actions.js",
+                  "handler" : "editMataTags",
+                  "name" : "HTML - Meta tags",
+                  "identifier" : "com.animaapp.edit-mata-tags",
+                  "isRoot" : false
+                  },
+                  {
+                  "script" : "framework_actions.js",
+                  "handler" : "editFontsFallbacks",
+                  "name" : "CSS - Font-family fallbacks",
+                  "identifier" : "com.animaapp.edit-fonts-fallbacks",
+                  "isRoot" : false
+                  },
+                  {
+                  "script" : "framework_actions.js",
                   "handler" : "detachSymbolPreservingOverrides",
                   "name" : "Detach Symbol While Keeping Overrides",
                   "identifier" : "com.animaapp.detach-symbol",
@@ -137,6 +151,9 @@
                    "-",
                    "com.animaapp.export-code-web",
                    "-",
+                   "com.animaapp.edit-mata-tags",
+                   "com.animaapp.edit-fonts-fallbacks",
+                   "-",
                    "com.animaapp.anima-panel-autolayout",
                    "com.animaapp.create-sizes-doc-autolayout",
                    "com.animaapp.duplicate-detach",
@@ -168,10 +185,11 @@
     "description": "Publish websites directly from Sketch",
     "authorEmail" : "support@animaapp.com",
     "name" : "Launchpad by Anima",
-    "homepage": "http://www.animaapp.com",
-    "version": "0.7.1",
+    "homepage": "https://www.animaapp.com",
+    "version": "0.8.0",
     "manifestURL": "",
     "downloadURL": "",
     "compatibleVersion": 41,
-    "bundleVersion": 1
+    "bundleVersion": 1,
+    "appcast": "https://www.animaapp.com/launchpad/appcast.xml"
 }
