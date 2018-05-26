@@ -166,7 +166,7 @@
         "items" : [
                    "com.animaapp.animate-selection",
                    "com.animaapp.timeline-tutorial",
-                   "com.animaapp.timeline-sample-file",
+                   "com.animaapp.timeline-sample-file"
                    ]
     },
     "menu" :{
@@ -216,9 +216,9 @@
                                                       ]
                                             }
                                             ]
-                                  },
-                                  ],
-                       },
+                                  }
+                                  ]
+                       }
                        ]
         },
     "identifier" : "com.animaapp.stc-sketch-plugin",
