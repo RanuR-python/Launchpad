@@ -3,6 +3,20 @@
     "commands" : [
                   {
                   "script" : "framework_actions.js",
+                  "handler" : "exportToZeplin",
+                  "name" : "Export to Zeplin",
+                  "identifier" : "com.animaapp.export-to-zeplin",
+                  "isRoot" : false
+                  },
+                  {
+                  "script" : "framework_actions.js",
+                  "handler" : "prepareForExport",
+                  "name" : "Prepare For Export",
+                  "identifier" : "com.animaapp.prepare-for-export",
+                  "isRoot" : false
+                  },
+                  {
+                  "script" : "framework_actions.js",
                   "handler" : "myAccount",
                   "name" : "My Account",
                   "identifier" : "com.animaapp.my-account",
@@ -47,7 +61,7 @@
                   },
                   {
                   "name": "Show/Hide Panel",
-                  "shortcut" : "ctrl a",
+                  "shortcut" : "command ctrl a",
                   "identifier": "com.animaapp.anima-panel-autolayout",
                   "script": "autolayout.js",
                   "handler": "togglePanel",
@@ -151,22 +165,29 @@
                   "identifier" : "com.animaapp.timeline-tutorial",
                   "isRoot" : false
                   },
-
+                  {
+                  "script" : "framework_actions.js",
+                  "handler" : "clearExportCache",
+                  "name" : "Clear Cache",
+                  "identifier" : "com.animaapp.clear-cache",
+                  "isRoot" : false
+                  },
                   {
                   "script":"autolayout.js",
                   "handlers":{
-                  "actions":{
-                  "Startup":"start"
-                  }
-                  }
-                  }
+                      "actions":{
+                      "Startup":"start",
+                  "OpenDocument": "start"
+                      }
+                      }
+                    }
                   ],
     "addLater" : {
         "title" : "🔹 Timeline",
         "items" : [
                    "com.animaapp.animate-selection",
                    "com.animaapp.timeline-tutorial",
-                   "com.animaapp.timeline-sample-file",
+                   "com.animaapp.timeline-sample-file"
                    ]
     },
     "menu" :{
@@ -185,11 +206,15 @@
                                   "com.animaapp.upgrade-plan",
                                   "-",
                                   "com.animaapp.anima-panel-autolayout",
+                                  "-",
+                                  "com.animaapp.duplicate-detach",
+                                  "-",
                                   {
                                   "title": "More",
                                   "items": [
                                             "com.animaapp.edit-mata-tags",
                                             "com.animaapp.edit-fonts-fallbacks",
+                                            "com.animaapp.clear-cache",
                                             "-",
                                             "com.animaapp.create-sizes-doc-autolayout",
                                             "com.animaapp.duplicate-detach",
@@ -216,9 +241,9 @@
                                                       ]
                                             }
                                             ]
-                                  },
-                                  ],
-                       },
+                                  }
+                                  ]
+                       }
                        ]
         },
     "identifier" : "com.animaapp.stc-sketch-plugin",
@@ -226,10 +251,10 @@
     "authorEmail" : "support@animaapp.com",
     "name" : "Anima Toolkit",
     "homepage": "https://www.animaapp.com",
-    "version": "0.13.2",
+    "version": "2.0.5",
     "manifestURL": "",
     "downloadURL": "",
-    "compatibleVersion": 49,
+    "compatibleVersion": 51,
     "bundleVersion": 1,
     "appcast": "https://www.animaapp.com/timeline/appcast.xml"
 }

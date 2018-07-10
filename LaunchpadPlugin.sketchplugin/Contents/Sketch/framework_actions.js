@@ -37,7 +37,7 @@ function createLinkForSelectedLayer(context) {
 
 function createScreenSizesDoc(context) {
     loadBundleIfRequired();
-    [APSketch createScreenSizesDoc];
+    [APSketch createScreenSizesDoc:context];
 }
 
 function checkForUpdate(context) {
@@ -118,3 +118,19 @@ function editMataTags(context) {
     loadBundleIfRequired();
     [APSketch editMataTags];
 }
+
+function prepareForExport(context) {
+    loadBundleIfRequired();
+    [APSketch prepareForExportIfNeeded:context];
+}
+
+function exportToZeplin(context) {
+    loadBundleIfRequired();
+    [APSketch runZeplinExport:context];
+}
+
+function clearExportCache(context) {
+    loadBundleIfRequired();
+    [APSketch clearExportCache];
+}
+
